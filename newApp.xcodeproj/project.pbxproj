@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,10 +13,19 @@
 		EF12B585237F5294001BD16A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF12B583237F5294001BD16A /* Main.storyboard */; };
 		EF12B587237F5296001BD16A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF12B586237F5296001BD16A /* Assets.xcassets */; };
 		EF12B58A237F5296001BD16A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF12B588237F5296001BD16A /* LaunchScreen.storyboard */; };
+		EF9C8A072388B0D600DBE144 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9C8A062388B0D600DBE144 /* Constants.swift */; };
+		EFB7E022238DF5F300B3D824 /* DiseñosTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB7E021238DF5F300B3D824 /* DiseñosTextField.swift */; };
+		EFD5537A2387F9670067D15A /* registroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD553792387F9670067D15A /* registroViewController.swift */; };
+		EFD5537C2387F9D30067D15A /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD5537B2387F9D30067D15A /* homeViewController.swift */; };
+		EFEF0BBC2387E8870062BF62 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFEF0BBB2387E8870062BF62 /* GoogleService-Info.plist */; };
+		F00790004ADF6061C36749BF /* Pods_newApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6362338539A132C9C9F74E /* Pods_newApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EF12B57A237F5294001BD16A /* newApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49A17A9E6DF5DB01D860DEC3 /* Pods-newApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newApp.release.xcconfig"; path = "Target Support Files/Pods-newApp/Pods-newApp.release.xcconfig"; sourceTree = "<group>"; };
+		70BBC11C39A46CED8C4D5945 /* Pods-newApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newApp.debug.xcconfig"; path = "Target Support Files/Pods-newApp/Pods-newApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EB6362338539A132C9C9F74E /* Pods_newApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF12B57A237F5294001BD16A /* Match Dog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Match Dog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF12B57D237F5294001BD16A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF12B57F237F5294001BD16A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EF12B581237F5294001BD16A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +33,11 @@
 		EF12B586237F5296001BD16A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF12B589237F5296001BD16A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF12B58B237F5296001BD16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF9C8A062388B0D600DBE144 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EFB7E021238DF5F300B3D824 /* DiseñosTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiseñosTextField.swift"; sourceTree = "<group>"; };
+		EFD553792387F9670067D15A /* registroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registroViewController.swift; sourceTree = "<group>"; };
+		EFD5537B2387F9D30067D15A /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		EFEF0BBB2387E8870062BF62 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,24 +45,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F00790004ADF6061C36749BF /* Pods_newApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A1D434D2C49852DC550ACF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70BBC11C39A46CED8C4D5945 /* Pods-newApp.debug.xcconfig */,
+				49A17A9E6DF5DB01D860DEC3 /* Pods-newApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		60334BC2B9492650A8176D58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB6362338539A132C9C9F74E /* Pods_newApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EF12B571237F5294001BD16A = {
 			isa = PBXGroup;
 			children = (
+				EFEF0BBB2387E8870062BF62 /* GoogleService-Info.plist */,
 				EF12B57C237F5294001BD16A /* newApp */,
 				EF12B57B237F5294001BD16A /* Products */,
+				0A1D434D2C49852DC550ACF9 /* Pods */,
+				60334BC2B9492650A8176D58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		EF12B57B237F5294001BD16A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EF12B57A237F5294001BD16A /* newApp.app */,
+				EF12B57A237F5294001BD16A /* Match Dog.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +91,35 @@
 		EF12B57C237F5294001BD16A /* newApp */ = {
 			isa = PBXGroup;
 			children = (
+				EF9C8A052388B0A800DBE144 /* Helpers */,
+				EFEF0BBA2387E0370062BF62 /* Guide Controller */,
 				EF12B57D237F5294001BD16A /* AppDelegate.swift */,
-				EF12B57F237F5294001BD16A /* SceneDelegate.swift */,
-				EF12B581237F5294001BD16A /* ViewController.swift */,
 				EF12B583237F5294001BD16A /* Main.storyboard */,
+				EF12B57F237F5294001BD16A /* SceneDelegate.swift */,
 				EF12B586237F5296001BD16A /* Assets.xcassets */,
 				EF12B588237F5296001BD16A /* LaunchScreen.storyboard */,
 				EF12B58B237F5296001BD16A /* Info.plist */,
 			);
 			path = newApp;
+			sourceTree = "<group>";
+		};
+		EF9C8A052388B0A800DBE144 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EF9C8A062388B0D600DBE144 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EFEF0BBA2387E0370062BF62 /* Guide Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF12B581237F5294001BD16A /* ViewController.swift */,
+				EFD553792387F9670067D15A /* registroViewController.swift */,
+				EFD5537B2387F9D30067D15A /* homeViewController.swift */,
+				EFB7E021238DF5F300B3D824 /* DiseñosTextField.swift */,
+			);
+			path = "Guide Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF12B58E237F5296001BD16A /* Build configuration list for PBXNativeTarget "newApp" */;
 			buildPhases = (
+				078B1C16DF42651AE3E53AB3 /* [CP] Check Pods Manifest.lock */,
 				EF12B576237F5294001BD16A /* Sources */,
 				EF12B577237F5294001BD16A /* Frameworks */,
 				EF12B578237F5294001BD16A /* Resources */,
+				DF7097297367EFA5619F8A0A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -84,7 +141,7 @@
 			);
 			name = newApp;
 			productName = newApp;
-			productReference = EF12B57A237F5294001BD16A /* newApp.app */;
+			productReference = EF12B57A237F5294001BD16A /* Match Dog.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -128,10 +185,53 @@
 				EF12B58A237F5296001BD16A /* LaunchScreen.storyboard in Resources */,
 				EF12B587237F5296001BD16A /* Assets.xcassets in Resources */,
 				EF12B585237F5294001BD16A /* Main.storyboard in Resources */,
+				EFEF0BBC2387E8870062BF62 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		078B1C16DF42651AE3E53AB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-newApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF7097297367EFA5619F8A0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-newApp/Pods-newApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-newApp/Pods-newApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-newApp/Pods-newApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF12B576237F5294001BD16A /* Sources */ = {
@@ -139,8 +239,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF12B582237F5294001BD16A /* ViewController.swift in Sources */,
+				EFD5537A2387F9670067D15A /* registroViewController.swift in Sources */,
 				EF12B57E237F5294001BD16A /* AppDelegate.swift in Sources */,
+				EFD5537C2387F9D30067D15A /* homeViewController.swift in Sources */,
 				EF12B580237F5294001BD16A /* SceneDelegate.swift in Sources */,
+				EF9C8A072388B0D600DBE144 /* Constants.swift in Sources */,
+				EFB7E022238DF5F300B3D824 /* DiseñosTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +386,7 @@
 		};
 		EF12B58F237F5296001BD16A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70BBC11C39A46CED8C4D5945 /* Pods-newApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -293,7 +398,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mt.newApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Match Dog";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,6 +406,7 @@
 		};
 		EF12B590237F5296001BD16A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49A17A9E6DF5DB01D860DEC3 /* Pods-newApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,7 +418,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mt.newApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Match Dog";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
